@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quizz app</title>
+  </head>
+  <body>
+    <header class="title">
+      <h1>Quiz informatique et multimédia</h1>
+      <div class="score btn" id="score">0</div>
+    </header>
+
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="questions">Questions</div>
+        <div id="answer-btns" class="btn-grid">
+          <button class="btn">Réponse 1</button>
+          <button class="btn">Réponse 2</button>
+          <button class="btn">Réponse 3</button>
+          <button class="btn">Réponse 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="start-btn btn" id="start-btn">Commencer</button>
+        <button class="next-btn btn hide" id="next-btn">Suivant</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

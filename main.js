@@ -64,6 +64,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextBtn.classList.remove("hide");
   } else {
+    nextBtn.classList.add("hide");
     startBtn.classList.remove("hide");
     startBtn.innerText = "Recommencer ?";
   }

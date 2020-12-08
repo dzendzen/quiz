@@ -65,8 +65,7 @@ function selectAnswer(e) {
     nextBtn.classList.remove("hide");
   } else {
     nextBtn.classList.add("hide");
-    startBtn.classList.remove("hide");
-    startBtn.innerText = "Recommencer ?";
+    
   }
   if ((selectedBtn.dataset = correct)) {
     score++;
@@ -87,7 +86,6 @@ function clearStatusClass(element) {
   element.classList.remove("correct");
   element.classList.remove("wrong");
 }
-
 // quiz questions
 const questions = [
   {

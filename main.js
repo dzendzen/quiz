@@ -65,6 +65,10 @@ function selectAnswer(e) {
     nextBtn.classList.remove("hide");
   } else {
     nextBtn.classList.add("hide");
+    end = document.createElement("button");
+    end.classList.add("btn");
+    end.innerText = "Fin du quiz";
+    answerBtnsElt.appendChild(end);
     
   }
   if ((selectedBtn.dataset = correct)) {
@@ -77,6 +81,7 @@ function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
     element.classList.add("correct");
+    element.disabled = true;
   } else {
     element.classList.add("wrong");
   }

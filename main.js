@@ -92,7 +92,9 @@ function clearStatusClass(element) {
   element.classList.remove("wrong");
 }
 // quiz questions
-const questions = [
+
+   questions = [
+  // ****IDENTITÉ NUMÉRIQUE - MULTIMÉDIA + intro image
   {
     question: "Le mot informatique est formé de",
     answers: [
@@ -101,198 +103,176 @@ const questions = [
     ],
   },
   {
-    question: "Qu'est-ce que la CNIL ?",
+    question: "Comment appelle-t-on aussi le harcèlement en ligne ?",
     answers: [
+      { text: "cybercriminalité", correct: false },
+      { text: "cyberagression", correct: false },
+      { text: "cyberharcèlement", correct: true },
+      { text: "cyberattaque", correct: false },
+    ],
+  },
+  {
+    question: "Si une appli est gratuite, c'est que tu es certainement ",
+    answers: [
+      { text: "le produit", correct: true },
+      { text: "le client", correct: false },
+      { text: "le joueur", correct: false },
+      { text: "un fan", correct: false },
+    ],
+  },
+  {
+    question: "On sait toujours qui est de l'autre côté de l'écran",
+    answers: [
+      { text: "vrai", correct: false },
+      { text: "faux", correct: true },
+    ],
+  },
+  {
+    question: "On doit toujours utiliser le même mot de passe",
+    answers: [
+      { text: "vrai", correct: false },
+      { text: "faux", correct: true },
+    ],
+  },
+  {
+    question:
+      "Sur les réseaux sociaux il vaut mieux utiliser un ... à la place de son vrai nom",
+    answers: [
+      { text: "homonyme", correct: false },
+      { text: "pseudonyme", correct: true },
+      { text: "algorithme", correct: false },
+      { text: "fantôme", correct: false },
+    ],
+  },
+  {
+    question: "Ctrl + C permet ",
+    answers: [
+      { text: "de copier", correct: true },
+      { text: "de coller", correct: false },
+      { text: "d'écrire un C majuscule", correct: false },
+      { text: "d'écrire un courrier", correct: false },
+    ],
+  },
+  {
+    question: "Lequel n'est PAS un réseau social",
+    answers: [
+      { text: "instagram", correct: false },
+      { text: "tik tok", correct: false },
+      { text: "snapchat", correct: false },
+      { text: "outlook", correct: true },
+    ],
+  },
+  {
+    question: "Facebook est plutôt le réseau social des + de 30 ans",
+    answers: [
+      { text: "vrai", correct: true },
+      { text: "faux", correct: false },
+      // {text:"", correct: false},
+      // {text:"", correct: false},
+    ],
+  },
+  {
+    question: "Lequel n'est PAS un fichier image",
+    answers: [
+      { text: "jpg", correct: false },
+      { text: "webp", correct: false },
+      { text: "wma", correct: true },
+      { text: "png", correct: false },
+    ],
+  },
+  {
+    question: "La photographie numérique a été précédée par la photographie ",
+    answers: [
+      { text: "argentique", correct: true },
+      { text: "argentine", correct: false },
+      { text: "électronique", correct: false },
+      { text: "argentinique", correct: false },
+    ],
+  },
+  {
+    question: "La chambre noire c'est",
+    answers: [
+      { text: "l'endroit où sont stockées toutes nos données", correct: false },
+      { text: "l'autre nom du daguerréotype", correct: false },
+      { text: "une partie d'un daguerréotype", correct: true },
+      { text: "l'endroit où travaillent les développeurs web", correct: false },
+    ],
+  },
+  {
+    question:
+      "Avec le daguerréotype, pour que l'image se révèle on utilise les vapeurs",
+    answers: [
+      { text: "de mercure", correct: true },
+      { text: "d'argent", correct: false },
+      { text: "d'iode", correct: false },
+      { text: "d'ammoniaque", correct: false },
+    ],
+  },
+  {
+    question: "quand l'image est insensible à la lumière on dit qu'elle est",
+    answers: [
+      { text: "réussie", correct: false },
+      { text: "fixée", correct: true },
+      { text: "appliquée", correct: false },
+      { text: "collée", correct: false },
+    ],
+  },
+  {
+    question: "Les premières plaques de daguerréotype représentaient",
+    answers: [
+      { text: "des portraits", correct: false },
+      { text: "des rues", correct: false },
+      { text: "une forêt", correct: false },
+      { text: "des natures mortes", correct: true },
+    ],
+  },
+  {
+    question: "La photographie argentique fait appel à un processus",
+    answers: [
+      { text: "photo-chimique", correct: true },
+      { text: "photo-electrique", correct: false },
+      { text: "photo-numérique", correct: false },
+      { text: "photo-argentique", correct: false },
+    ],
+  },
+  {
+    question: "Le poids de l'image c'est la quantité ",
+    answers: [
+      { text: "de personnes sur présentes sur l'image ", correct: false },
+      { text: "de pixels présents sur une image", correct: false },
+      { text: "le nombre de fois où on a partagé l'image", correct: false },
       {
-        text: "Comité National de l'Informatique et des Licences",
-        correct: false,
-      },
-      { text: "Comission Nationale de l'Informatique Libre", correct: false },
-      {
-        text: "Comission Nationale de l'Informatique et des Libertés",
+        text: "d'informations nécessaires pour décrire une image",
         correct: true,
       },
-      { text: "Comission Nationale pour l'Internet Local", correct: false },
     ],
   },
   {
-    question: "Le premier courrier électronique a été envoyé en",
+    question: "La valise Belino permet",
     answers: [
-      { text: "1964", correct: false },
-      { text: "1991", correct: false },
-      { text: "1985", correct: false },
-      { text: "1971", correct: true },
-    ],
-  },
-  {
-    question: "Le www c'est",
-    answers: [
-      { text: "le Word Wild Web", correct: false },
-      { text: "le World Wide Web", correct: true },
-      { text: "le Word Wide Web", correct: false },
-      { text: "le Wood Wide Web", correct: false },
+      { text: "de voyager léger", correct: false },
+      { text: "transmettre des photographies", correct: true },
+      { text: "transporter son appareil photo", correct: false },
+      { text: "transporter une caméra", correct: false },
     ],
   },
   {
     question:
-      "Dans le mot INTERNET, INTER signifie international. Mais que signifie NET ?",
+      "Face au flux d'informations et d'images il faut exercer son sens ",
     answers: [
-      { text: "connaissance", correct: false },
-      { text: "réseau", correct: true },
-      { text: "données", correct: false },
-      { text: "échange", correct: false },
+      { text: "du partage", correct: false },
+      { text: "critique", correct: true },
+      { text: "pratique", correct: false },
+      { text: "comique", correct: false },
     ],
   },
   {
-    question: "Un DNS c'est",
+    question: "Peut-on tout montrer dans les médias ?",
     answers: [
-      {
-        text:
-          "Un système de gestion des noms de domaines sur Internet (Domain Name System)",
-        correct: true,
-      },
-      {
-        text:
-          "Un système de gestion de sites dynamiques (Dynamic Network Server)",
-        correct: false,
-      },
-      { text: "L’organisme américain qui supervise Internet", correct: false },
-      {
-        text: "Un système de sécurité de l’Internet (Data Network Security)",
-        correct: false,
-      },
+      { text: "non", correct: true },
+      { text: "oui", correct: false },
+      // {text:"", correct: false},
+      // {text:"", correct: false},
     ],
   },
-  {
-    question:
-      "Quel est le nom donné à un logiciel permettant l’accès à des pages web ?",
-    answers: [
-      { text: "séquenceur", correct: false },
-      { text: "navigateur", correct: true },
-      { text: "provider", correct: false },
-      { text: "chercheur", correct: false },
-    ],
-  },
-  {
-    question: "Cherchez l'intrus :",
-    answers: [
-      { text: "www.google.it", correct: false },
-      { text: "ww.google.fr", correct: true },
-      { text: "www.google.nl", correct: false },
-      { text: "www.google.com", correct: false },
-    ],
-  },
-  {
-    question: "Internet c'est",
-    answers: [
-      { text: "un logiciel", correct: false },
-      { text: "un ensemble d'ordinateurs", correct: false },
-      { text: "un réseau local", correct: false },
-      { text: "réseau de réseaux", correct: true },
-    ],
-  },
-  {
-    question:
-      "Pour me connecter je dois posséder un .... entre ma ligne téléphonique et mon ordinateur?",
-    answers: [
-      { text: "scanner", correct: false },
-      { text: "modem", correct: true },
-      { text: "écran", correct: false },
-      { text: "modèle", correct: false },
-    ],
-  },
-  {
-    question:
-      "Pour accéder à internet, l'utilisateur doit utiliser les services d'un :",
-    answers: [
-      { text: "fournisseur électronique", correct: false },
-      { text: "informaticien", correct: false },
-      { text: "fournisseur d'accès", correct: true },
-      { text: "électronicien", correct: false },
-    ],
-  },
-  {
-    question:
-      "Tu viens de naviguer sur plusiers sites. Le navigateur a mémorisé toutes les adresses dans :",
-    answers: [
-      { text: "l'historique", correct: true },
-      { text: "les favoris", correct: false },
-      { text: "la barre de liens", correct: false },
-      { text: "le journal", correct: false },
-    ],
-  },
-  {
-    question:
-      "comment se nomme le premier écran visible après l'allumage de l'ordinateur?  ",
-    answers: [
-      { text: "le poste de travail", correct: false },
-      { text: "le bureau", correct: true },
-      { text: "le navigateur", correct: false },
-      { text: "l'explorateur", correct: false },
-    ],
-  },
-  {
-    question:
-      "Comment se nomme l'endroit où sont stockés les fichiers supprimés?",
-    answers: [
-      { text: "le bureau", correct: false },
-      { text: "le dossier", correct: false },
-      { text: "la poubelle", correct: false },
-      { text: "la corbeille", correct: true },
-    ],
-  },
-  {
-    question: "Ctrl+z me permet :",
-    answers: [
-      { text: "d'annuler ce que je viens de faire", correct: true },
-      { text: "de couper ce que j'ai sélectionné", correct: false },
-      { text: "de controler une zone", correct: false },
-      { text: "d'écrire un Z majuscule", correct: false },
-    ],
-  },
-  {
-    question: "Word est un :",
-    answers: [
-      { text: "traitement de texte", correct: true },
-      { text: "système d'exploitation", correct: false },
-      { text: "tableur", correct: false },
-      { text: "dictionnaire", correct: false },
-    ],
-  },
-  {
-    question: "Excel est un :",
-    answers: [
-      { text: "traitement de texte", correct: false },
-      { text: "système d'exploitation", correct: false },
-      { text: "tableur", correct: true },
-      { text: "dictionnaire", correct: false },
-    ],
-  },
-  {
-    question: "En quelle année sont nés les premiers réseaux sociaux ?",
-    answers: [
-      { text: "2000", correct: false },
-      { text: "2004", correct: false },
-      { text: "1997", correct: true },
-      { text: "1992", correct: false },
-    ],
-  },
-  {
-    question: "Lequel n'est PAS un périphérique :",
-    answers: [
-      { text: "webcam", correct: false },
-      { text: "clé usb", correct: false },
-      { text: "imprimante", correct: false },
-      { text: "processeur", correct: true },
-    ],
-  },
-  {
-    question: "Facebook est né en :",
-    answers: [
-      { text: "2004", correct: true },
-      { text: "1997", correct: false },
-      { text: "2000", correct: false },
-      { text: "1992", correct: false },
-    ],
-  },
-];
+     ]

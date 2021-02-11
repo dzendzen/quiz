@@ -248,12 +248,11 @@ function clearStatusClass(element) {
     ],
   },
   {
-    question: "La valise Belino permet",
+    question: "Qwerty est un langage informatique ",
     answers: [
-      { text: "de voyager léger", correct: false },
-      { text: "transmettre des photographies", correct: true },
-      { text: "transporter son appareil photo", correct: false },
-      { text: "transporter une caméra", correct: false },
+      { text: "Vrai", correct: false },
+      { text: "Faux", correct: true },
+     
     ],
   },
   {

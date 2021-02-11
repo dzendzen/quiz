@@ -67,7 +67,7 @@ function selectAnswer(e) {
     nextBtn.classList.add("hide");
     end = document.createElement("button");
     end.classList.add("btn");
-    end.innerText = "Fin du quiz ! Ton score est de : "+ score;
+    end.innerText = "Bravo tu as fini le quiz !";
     answerBtnsElt.appendChild(end);
     
   }
